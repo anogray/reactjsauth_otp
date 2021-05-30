@@ -12,7 +12,8 @@ function LogOutBtn() {
    const dispatch = useDispatch();
 
   async function logOut() {
-    await axios.get("http://localhost:3002/auth/logout");
+    // await axios.get("http://localhost:3002/auth/logout");
+    await axios.post("https://nodejwtauth-emailotp.herokuapp.com/auth/logout");
     // await axios.get(
     //   "https://mern-auth-template-tutorial.herokuapp.com/auth/logout"
     // );
