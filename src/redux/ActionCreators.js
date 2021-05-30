@@ -32,7 +32,9 @@ export const checkIsLoggedIn = ()=>async(dispatch) =>{
     // console.log("checkIsLoggedIn actionCreator ",data, isLogged, setisLogged)
     // setLoggedIn("hehehehe")
 
-    let isLoggedIn = await axios.get("http://localhost:3002/auth/loggedIn");
+    // let isLoggedIn = await axios.get("http://localhost:3002/auth/loggedIn");
+    let isLoggedIn = await axios.post("https://nodejwtauth-emailotp.herokuapp.com/auth/loggedIn");
+
     console.log("isLoggedIn",isLoggedIn.data)
 
     if(isLoggedIn.data){
