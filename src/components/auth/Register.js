@@ -30,7 +30,7 @@ const Register = () => {
                 setLoading(true);
                 setisOtp(true);
                 // await axios.post("http://localhost:3002/auth",registerData);
-                await axios.post("https://nodejwtauth-emailotp.herokuapp.com/auth",registerData);
+                await axios.post("https://nodejwtauth-email.herokuapp.com/auth",registerData);
 
                 
                 //dispatch(checkIsLoggedIn());
@@ -47,7 +47,7 @@ const Register = () => {
                 if(otpVal.length){
                     let otpClient = +otpVal
                    //await axios.post("http://localhost:3002/auth",{otpClient});
-                   await axios.post("https://nodejwtauth-emailotp.herokuapp.com/auth",{otpClient});
+                   await axios.post("https://nodejwtauth-email.herokuapp.com/auth",{otpClient});
 
                     dispatch(checkIsLoggedIn());
                 }

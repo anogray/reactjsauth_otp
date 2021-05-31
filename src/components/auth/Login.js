@@ -31,7 +31,7 @@ const Login = () => {
             }
 
         //  let resp = await axios.post("http://localhost:3002/auth/login",LoginData);
-         let resp = await axios.post("https://nodejwtauth-emailotp.herokuapp.com/auth/login",LoginData);
+         let resp = await axios.post("https://nodejwtauth-email.herokuapp.com/auth/login",LoginData);
 
          dispatch(checkIsLoggedIn("hello from logged in"));
             console.log({resp})
