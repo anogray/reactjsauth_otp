@@ -27,10 +27,15 @@ const Register = () => {
                 }
             
                 console.log("gotForm",registerData);
+
+                if(password===verifyPassword){
                 setLoading(true);
                 setisOtp(true);
                 // await axios.post("http://localhost:3002/auth",registerData);
                 await axios.post("https://nodejwtauth-email.herokuapp.com/auth",registerData);
+                }else{
+                    alert("Incorrect password")
+                }
 
                 
                 //dispatch(checkIsLoggedIn());

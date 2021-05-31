@@ -33,7 +33,7 @@ export const checkIsLoggedIn = ()=>async(dispatch) =>{
     // setLoggedIn("hehehehe")
 
     // let isLoggedIn = await axios.get("http://localhost:3002/auth/loggedIn");
-    let isLoggedIn = await axios.post("https://nodejwtauth-emailotp.herokuapp.com/auth/loggedIn");
+    let isLoggedIn = await axios.get("https://nodejwtauth-email.herokuapp.com/auth/loggedIn");
 
     console.log("isLoggedIn",isLoggedIn.data)
 

@@ -12,7 +12,7 @@ const Photos = () => {
         const dataArr = async()=> {
             //  let data = await axios.get("https://jsonplaceholder.typicode.com/photos")
              //let data = await axios.get("http://localhost:3002/photos")
-             let data = await axios.post("https://nodejwtauth-email.herokuapp.com/photo");
+             let data = await axios.get("https://nodejwtauth-email.herokuapp.com/photos");
 
 
             // let data = [{

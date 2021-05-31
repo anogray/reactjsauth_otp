@@ -13,7 +13,7 @@ function LogOutBtn() {
 
   async function logOut() {
     // await axios.get("http://localhost:3002/auth/logout");
-    await axios.post("https://nodejwtauth-email.herokuapp.com/auth/logout");
+    await axios.get("https://nodejwtauth-email.herokuapp.com/auth/logout");
     // await axios.get(
     //   "https://mern-auth-template-tutorial.herokuapp.com/auth/logout"
     // );
