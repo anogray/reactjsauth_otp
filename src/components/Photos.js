@@ -20,7 +20,7 @@ const Photos = () => {
 
             // console.log("resp",data);
             settotalPic(data.data.totalPics)
-            setcurrPage(499);
+            setcurrPage(1);
             setdata(data.data.photosArr);
             const currPageData = data.data.photosArr?.slice(0,10);
             // console.log("First DB currPageData",currPageData);
