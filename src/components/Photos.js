@@ -18,7 +18,7 @@ const Photos = () => {
              let data = await axios.get("https://nodejwtauth-email.herokuapp.com/photos");
 
 
-            // console.log("resp",data);
+            console.log("resp",data);
             settotalPic(data.data.totalPics)
             setcurrPage(1);
             setdata(data.data.photosArr);
