@@ -50,7 +50,7 @@ const Photos = () => {
         setcurrData(currPageData);
 
     }
-
+console.log("dataAll",data);
     return (
         <div>
         {totalPic>0  && 
