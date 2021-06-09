@@ -22,7 +22,7 @@ const Photos = () => {
             settotalPic(data.data.totalPics)
             setcurrPage(1);
             setdata(data.data.photosArr);
-            const currPageData = data.data.photosArr?.slice(0,10);
+            const currPageData = data.data.photosArr.slice(0,10);
             // console.log("First DB currPageData",currPageData);
             setcurrData(currPageData);
         } 
@@ -59,7 +59,7 @@ console.log("dataAll",data);
             {currPage}
             {currPage>=1 && currPage<totalPic/10 && <button onClick={nextPage}> {`>`} </button>}
         </div> }            
-            {currData  && currData.length > 0 ? 
+            {currData.length > 0 ? 
                 currData.map((data)=> 
             <div key={data.id}>
             <li >{data.id} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src={data.url}/>   </li>
