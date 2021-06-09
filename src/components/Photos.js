@@ -59,7 +59,7 @@ const Photos = () => {
             {currPage}
             {currPage>=1 && currPage<totalPic/10 && <button onClick={nextPage}> {`>`} </button>}
         </div> }            
-            {currData.length > 0 ? 
+            {!currData  && currData.length > 0 ? 
                 currData.map((data)=> 
             <div key={data.id}>
             <li >{data.id} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src={data.url}/>   </li>
