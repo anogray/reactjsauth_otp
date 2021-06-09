@@ -68,6 +68,12 @@ const Register = () => {
         
         
     }
+
+    const testHttp = async(e) =>{
+        e.preventDefault();
+        await axios.get("https://nodejwtauth-email.herokuapp.com/mail")
+
+    }
     return (
         <div>
         <h1>Register new User !</h1>
@@ -87,6 +93,8 @@ const Register = () => {
             
             {!isOtp && <button type="submit" name="basic" onClick={submitRegister}>Submit</button>}
             {isOtp && <button type="submit" name="otpBtn" onClick={submitRegister}>Submit</button>}
+
+            <button type="submit" name="testHttp" onClick={testHttp}>Check HttpOnly</button>
 
         </form>
             
